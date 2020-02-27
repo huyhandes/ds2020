@@ -11,6 +11,7 @@ USTH ICT 2020 Distributed Systems
 Group Info
 =======================
 
-* Name 1 (ID1)
-* Name 2 (ID2)
-
+* Bùi Quang Huy (USTHBI8-072)
+* Nguyễn Việt Dũng (USTHBI8-030)
+* Nguyễn Quang Trung (USTHBI8-182)
+* Đỗ Minh Hoàng (USTHBI7-072)
