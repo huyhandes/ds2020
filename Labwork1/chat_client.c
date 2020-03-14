@@ -33,14 +33,9 @@ int main(int argc, char* argv[]) {
     connect(serv, (struct sockaddr *)&ad, ad_length);
 
     while (1) {
-        // after connected, it's client turn to chat
-
-        // send some data to server
         printf("client>");
         scanf("%s", s);
         write(serv, s, strlen(s) + 1);
-
-        // then it's server turn
         read(serv, s, sizeof(s));
 
         printf("server says: %s\n", s);
