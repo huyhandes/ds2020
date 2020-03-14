@@ -15,3 +15,4 @@ Group Info
 * Nguyễn Việt Dũng (USTHBI8-030)
 * Nguyễn Quang Trung (USTHBI8-182)
 * Đỗ Minh Hoàng (USTHBI7-072)
+* Phạm Minh Kiên (USTHBI7-087)
