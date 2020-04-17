@@ -50,30 +50,30 @@ int main() {
             }
             return 0;
         }
-        else {
-            waitpid(pid, NULL, 0);
-            int pid1 = fork();
-            if (pid1 == 0) {
-                // I'm the son, I'll serve this client
-                printf("client 1 connected\n");
-                while (1) {
-                    // it's client turn to chat, I wait and read message from client
-                    read(cli, s, sizeof(s));
-                    printf("client 1 says: %s\n",s);
+        // else {
+        //     waitpid(pid, NULL, 0);
+        //     int pid1 = fork();
+        //     if (pid1 == 0) {
+        //         // I'm the son, I'll serve this client
+        //         printf("client 1 connected\n");
+        //         while (1) {
+        //             // it's client turn to chat, I wait and read message from client
+        //             read(cli, s, sizeof(s));
+        //             printf("client 1 says: %s\n",s);
 
-                    // now it's my (server) turn
-                    printf("client 1>%s", s);
-                    scanf("%s", s);
-                    write(cli, s, strlen(s) + 1);
-                }
-                return 0;
-            }
-            else
-            {
-                //this is after work parent
-            }
+        //             // now it's my (server) turn
+        //             printf("client 1>%s", s);
+        //             scanf("%s", s);
+        //             write(cli, s, strlen(s) + 1);
+        //         }
+        //         return 0;
+        //     }
+        //     else
+        //     {
+                
+        //     }
             
-        }
+        //}
     }
     // disconnect
     close(cli);

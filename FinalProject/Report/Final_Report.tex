@@ -150,22 +150,86 @@ For this purpose, it relies on Engine.IO, which first establishes a long-polling
 Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
 
 
+\section{Working Method}
+\subsection{How server work}
+    \paragraph{}
+    We build our own server base on Nodejs and socketIO, which help us to listen the event on client.
+    \begin{lstlisting}
+        socket.on('username',username => {
+            OnlineUser.push(new User(username,socket.id))
+            console.log(OnlineUser);
+            setTimeout(() => socket.broadcast.emit("join_server",username),0);
+        });
+    \end{lstlisting}
+    This code make the server listen to the "username" event, which is submit the ID of the user to the server, also save it to database.
+    \newline
+    After that, another listenner also applied to listen for "disconnect" event, which to know when the user disconnected from the server then remove that user in database.
+    \begin{lstlisting}
+        socket.on('disconnect', () => {
+        let index = OnlineUser.findIndex(user => user.id == socket.id);
+        if(index != -1){
+            socket.broadcast.emit("leave_server",OnlineUser[index].username);
+            OnlineUser.splice(index,1);
+        }
+    });
+    \end{lstlisting}
+\subsection{How client work}
+        \paragraph{}
+        We use vue-peerjs and vue-socket.io-extended, which is the adaptive package that community develop to make a better experience when working with vuejs, two those packages still are peerjs and socket.io-client.
+        \begin{lstlisting}
+            import VuePeerJS from 'vue-peerjs';
+            import VueSocketIOExt from 'vue-socket.io-extended';
+        \end{lstlisting}
+        Then we listen to peerjs Implementation
+        \begin{lstlisting}
+            peer_open({dispatch,commit},id){
+                id = getSession();
+                this._vm.$peer.on('connection',function(conn){
+                    let chatZone = new ChatZone(conn);
+                    conn.on('data',function(message)  {
+                    dispatch('addMessage',{username:conn.peer,message})
+                    })
+                    commit('addConnection',chatZone);
+                })
+            },
+            peer_close(){
+                console.log('Connection destroyed');
+            },
+            peer_error({commit},err){
+                console.log(err);
+            }
+        \end{lstlisting}
+        When each user is initialized, this client will send "username" event to server through SocketIO
+        \begin{lstlisting}
+            this.$socket.client.emit('username',getSession());
+        \end{lstlisting}
+        Note that getSession() here is the last username on that tab/client.
+        \newline
+        And also listenner to server event
+        \begin{lstlisting}
+            socket_leaveServer({commit},username){
+                commit('removeConnection',username);
+            },
+            socket_joinServer({dispatch,commit},username){
+                let conn = this._vm.$peer.connect(username);
+                let chatZone = new ChatZone(conn);
+                conn.on('data', function(message) {
+                    dispatch('addMessage',{username,message})
+                })
+                commit('addConnection',chatZone);
+            },
+        \end{lstlisting}
 \section{Conclusion}
-\subsection{Write new users to the database}
-\subsection{Event listenner}
-
-
-
-
-
+    \paragraph{}
+    Hybrid centralized and p2p chatsystem chat system is very usable and dynamic. This system run with low latency and bandwidth because it only have to contain the user infomation, instead of all the message. P2P chatsystem meaning more security because the message can not read by the server, only client know those messages.
 \section{Who does what?}
 
 \begin{itemize}
-	\item Bui Quang Huy
-	\item Nguyen Viet Dung
-	\item Nguyen Quang Trung
-	\item Do Minh Hoang
-	\item Pham Minh kien
+	\item Bui Quang Huy: Build the main concept of the system and how they work.
+	\item Nguyen Viet Dung: Research on client side development, design client methods and events.
+	\item Nguyen Quang Trung: Design client concept and interface.
+	\item Do Minh Hoang: Research on server side development
+	\item Pham Minh Kien: Design server methods and events.
 \end{itemize}
 
 \end{document}

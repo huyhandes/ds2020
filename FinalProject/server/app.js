@@ -21,10 +21,8 @@ io.on('connection', socket => {
     socket.on('disconnect', () => {
         let index = OnlineUser.findIndex(user => user.id == socket.id);
         if(index != -1){
-            //console.log(OnlineUser[index].username);
             socket.broadcast.emit("leave_server",OnlineUser[index].username);
             OnlineUser.splice(index,1);
         }
-        //console.log(OnlineUser, "OUT");
     });
 })
