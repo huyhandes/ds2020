@@ -1,0 +1,84 @@
+PWD c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report
+INPUT C:\Users\Kahn\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.tex
+OUTPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.log
+INPUT K:\Program\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT K:\Program\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT K:\Program\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT K:\Program\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT K:\Program\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT K:\Program\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT K:\Program\MiKTeX 2.9\tex\latex\listings\listings.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\listings\listings.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\listings\listings.cfg
+INPUT K:\Program\MiKTeX 2.9\tex\latex\listings\listings.cfg
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.aux
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.aux
+OUTPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.aux
+INPUT K:\Program\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT K:\Program\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT K:\Program\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT K:\Program\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+OUTPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.pdf
+INPUT C:\Users\Kahn\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.toc
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.toc
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
+OUTPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.toc
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Model.png
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Model.png
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Model.png
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Model.png
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Model.png
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmtt8.tfm
+INPUT K:\Program\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
+INPUT K:\Program\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT K:\Program\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT c:\Users\Kahn\Documents\GitHub\ds2020\FinalProject\Report\Final_Report.aux
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt8.pfb
+INPUT K:\Program\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt8.pfb
